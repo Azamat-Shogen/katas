@@ -17,10 +17,9 @@ class LLinkedList:
     current = self.head
     while current.next is not None:
       current = current.next
-
+      
     current.next = node
   
-
   
   def to_list(self):
     arr = []
@@ -47,7 +46,6 @@ class LLinkedList:
       nextNode.next = current
       return rest
     
-
 
 list1 = LLinkedList()
 list1.append_node("a")
