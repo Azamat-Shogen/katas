@@ -17,9 +17,10 @@ class LLinkedList:
     current = self.head
     while current.next is not None:
       current = current.next
-      
+
     current.next = node
   
+
   
   def to_list(self):
     arr = []
@@ -35,9 +36,7 @@ class LLinkedList:
     return self.head
 
   def reverse_rec(self, current):
-    if current == None:
-      return current
-    elif current.next == None:
+    if current == None or current.next == None:
       return current
     else:
       nextNode = current.next
@@ -47,9 +46,11 @@ class LLinkedList:
       return rest
     
 
+
 list1 = LLinkedList()
 list1.append_node("a")
 list1.append_node("b")
+list1.append_node("j")
 list1.append_node("c")
 
 list1.reverse()
