@@ -75,8 +75,6 @@ class Solution:
     # RETURN True if All values are True , else False
     cube_pass = False not in cube_boolean_list
 
-
-
     # RETURN TRUE IF ALL CASES ARE TRUE (HORISONTAL, VERTICAL, CUBICAL)
     return (horiz_pass and vert_pass) and cube_pass
      
